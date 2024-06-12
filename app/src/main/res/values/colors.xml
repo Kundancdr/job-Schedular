@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="dark_blue">#121A28</color>
+    <color name="card1">#8754F4</color>
+    <color name="card1back">#ECE4FD</color>
+    <color name="card2">#26AAF5</color>
+    <color name="upcoming_cards">#E8F6FD</color>
+    <color name="transprent">#00E8F6FD</color>
+    <color name="orang">#FC6F3D</color>
+    <color name="orangeback">#FEE9E1</color>
+    <color name="topbar">#C2A6FE</color>
+    <color name="Red">#C2A6FE</color>
+    <color name="Red1">#FF0000</color>
+
+</resources>

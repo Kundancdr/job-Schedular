@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activity.Add">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/addnave">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+
+            android:gravity="center">
+
+            <RelativeLayout
+                android:id="@+id/addheaderrelativelayout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/msgheaderimage"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="10dp">
+
+                    <ImageButton
+                        android:id="@+id/msgheaderdp"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/transprent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/src1"
+                        tools:ignore="SpeakableTextPresentCheck" />
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/addheadertitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Add task"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/msgheadernotibutton"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="@color/transprent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/notification_bell_svgrepo_com"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_below="@+id/addheaderrelativelayout">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="10sp">
+
+                    <LinearLayout
+                        android:id="@+id/addtitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:textStyle="normal"
+                            android:textColor="@color/black"
+                            android:text="title" />
+
+                        <EditText
+
+                            android:id="@+id/title"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:hint="title" />
+                    </LinearLayout>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardElevation="40dp"
+                        android:id="@+id/cardlay"
+                        android:visibility="gone"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        >
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <Space
+                                android:layout_width="20dp"
+                                android:layout_height="50dp"
+                                android:layout_alignParentRight="true"
+                                android:id="@+id/spacerimage"/>
+                            <ImageButton
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:src="@drawable/cancel"
+                                android:scaleType="centerCrop"
+                                android:layout_alignParentTop="true"
+                                android:layout_toLeftOf="@+id/spacerimage"
+                                android:layout_marginTop="20dp"
+                                android:backgroundTint="#00FFFFFF"
+                                android:elevation="50dp"
+
+                                android:tint="@color/white"
+                                android:id="@+id/closeclender"
+                                tools:ignore="UseAppTint" />
+
+                            <DatePicker
+                                android:id="@+id/clenderview"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:visibility="visible" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+                    <ImageButton
+                        android:id="@+id/clander"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:backgroundTint="@color/white"
+                        android:scaleType="centerCrop"
+
+                        android:src="@drawable/calendar"
+                        android:tint="@color/card1"
+                        tools:ignore="SpeakableTextPresentCheck,UseAppTint" />
+
+                    <com.example.searchandchips.library.serch.Search_and_Chips
+                        android:id="@+id/employlist"
+                        android:layout_width="match_parent"
+                        android:layout_height="400dp" />
+
+                    <LinearLayout
+                        android:id="@+id/descriptition"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="description" />
+
+                        <EditText
+
+                            android:id="@+id/desctipatation"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:hint="description" />
+                    </LinearLayout>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@color/white"
+                            android:hint="add sub task"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:textSize="16dp" />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_margin="10dp"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+                    <LinearLayout
+                        android:id="@+id/resorcelink"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="resorce link" />
+
+                        <EditText
+
+                            android:id="@+id/resorce"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:hint="resorce link" />
+                        <Button
+                            android:id="@+id/submit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+
+                            android:layout_marginLeft="60dp"
+                            android:layout_marginRight="60dp"
+                            android:backgroundTint="@color/card1"
+                            android:text="Submit"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+    <RelativeLayout
+        android:id="@+id/addnave"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true">
+
+    </RelativeLayout>
+</RelativeLayout>

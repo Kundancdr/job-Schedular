@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "286013491289",
+    "project_id": "jobschedular-b7b26",
+    "storage_bucket": "jobschedular-b7b26.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:286013491289:android:26ed343d6c9cff88d8c948",
+        "android_client_info": {
+          "package_name": "com.example.jobschedular"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3xktkhud45dZmqs2l6s9kj68DWG-Y7aY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
